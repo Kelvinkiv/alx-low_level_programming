@@ -1,7 +1,8 @@
+#include <stdio.h>
 /**
  * main - C progaram with puts fucntion
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
