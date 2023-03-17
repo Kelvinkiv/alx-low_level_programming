@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
+/* more headers goes there */
 /* betty style doc for function main goes there */
 /**
  * main - A program to assign a random number to a variable n
@@ -15,16 +15,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-	{
 		printf("%d is positive", n);
-	}
 	else if (n == 0)
-	{
-		printf("%d is 0", n)
-	}
-	else if (n < 0)
-	{
+		printf("%d is 0", n);
+	else
 		printf("%d is negative", n);
-	}
 	return (0);
 }
