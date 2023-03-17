@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - A program that prints the sizes of various types
+ * main - A program that prints sizes of the various types on a computer
  * Return: 0 (Success)
  */
 int main(void)
@@ -9,11 +9,12 @@ int main(void)
 	int b;
 	long int c;
 	long long int d;
-	float a_1;
-printf("size of a char: %lu  byte(s)\n", (unsigned long)sizeof(a));
-printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
-printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
-printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
-printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(a_1));
-return (0);
+	float z;
+
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(z));
+	return (0);
 }
