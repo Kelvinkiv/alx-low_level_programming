@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - multiplies two intergers
+ * mul - multiplies two intergers
  * @a: first int
  * @b: second int
- * Return: a * b
+ * Return: result of multiplication of (a * b)
  */
 int mul(int a, int b)
 {
