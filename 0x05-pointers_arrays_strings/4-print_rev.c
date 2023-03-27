@@ -9,7 +9,6 @@ void print_rev(char *s)
 {
 	int c, n;
 
-	s = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 	n = strlen(s);
 	for (c = n - 1; c >= 0; c--)
 	{
