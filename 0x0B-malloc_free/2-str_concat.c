@@ -4,7 +4,7 @@
  * str_concat - concatenates two strings
  * @s1: String one
  * @s2: String two
- * Return: A pointer to the concatenated string else return NULL
+ * Return: Concatenated s1 and s2 else return NULL
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -20,6 +20,8 @@ char *str_concat(char *s1, char *s2)
 	m = n = 0;
 	while (s1[m] != '\0')
 		m++;
+	while (s2[n] != '\0')
+		n++;
 	a = malloc(sizeof(char) * (m + n + 1));
 
 	if (a == NULL)
