@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers
- * @width: array width
- * @height: height of the array
+ * @width: Matrix width
+ * @height: Matrix height
  * Return: Pointer to a 2 dimensional array else return NULL
  */
 int **alloc_grid(int width, int height)
@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 
 
 
-	c = malloc(sizeof(int *) * height);
+	c = (int **) malloc(sizeof(int *) * height);
 
 
 		if (c == NULL)
@@ -29,13 +29,14 @@ int **alloc_grid(int width, int height)
 
 	for (a = 0; a < height; a++)
 	{
-		c[a] = malloc(sizeof(int) * width);
+		c[a] = (int *) malloc(sizeof(int) * width);
 	}
 		if (c[a] == NULL)
 		{
-			for (; a >= 0; a--)
-				free(c[a]);
 			free(c);
+
+			for (b = 0; b < height; b++)
+				free(c[b]);
 			return (NULL);
 		}
 	for (a = 0; a < height; a++)
