@@ -3,8 +3,8 @@
 
 /**
 * *argstostr - concatenates all the arguments of a program
-* @ac: Input
-* @av: Input
+* @ac: Arguments params
+* @av: array params
 *Return: Pointer to the new string (Success), NULL (Error)
 */
 char *argstostr(int ac, char **av)
@@ -19,7 +19,6 @@ char *argstostr(int ac, char **av)
 	{
 		for (y = 0; av[x][y] != '\0'; y++)
 			len++;
-		len++;
 	}
 
 	a = malloc(sizeof(char) * (len + 1));
