@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
-
 /**
-* *argstostr - concatenates all the arguments of a program
+* argstostr - concatenates all the arguments of a program
 * @ac: Arguments params
 * @av: array params
 *Return: Pointer to the new string (Success), NULL (Error)
